@@ -1,0 +1,12 @@
+default: &default
+  databases:
+    primary:
+      url: <%= ENV["PGHERO_DATABASE_URL"] %>
+    replica:
+      url: <%= ENV["REPLICA_DATABASE_URL"] %>
+
+development:
+  <<: *default
+
+production:
+  <<: *default
