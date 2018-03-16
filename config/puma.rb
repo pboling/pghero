@@ -4,7 +4,7 @@
 # the maximum value specified for Puma. Default is set to 5 threads for minimum
 # and maximum; this matches the default thread size of Active Record.
 #
-threads Integer(ENV.fetch('RAILS_MIN_THREADS') { 1 } ), Integer(ENV.fetch('RAILS_MAX_THREADS') { 16 } )
+threads Integer(ENV.fetch('RAILS_MIN_THREADS') { 4 } ), Integer(ENV.fetch('RAILS_MAX_THREADS') { 16 } )
 
 # Specifies the number of `workers` to boot in clustered mode.
 # Workers are forked webserver processes. If using threads and workers together
