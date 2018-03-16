@@ -2,7 +2,7 @@
 lock "~> 3.10.1"
 
 # Change these
-server 'pghero.intricately.com', port: 80, roles: [:web, :app], primary: true
+server 'pghero', port: 80, roles: [:web, :app], primary: true
 
 set :repo_url,        'git@bitbucket.org:cloudrupt/pghero.git'
 set :application,     'pghero'

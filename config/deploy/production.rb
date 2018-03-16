@@ -20,8 +20,8 @@
 # role :app, %w{deploy@example.com}, my_property: :my_value
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
-role :app, %w{root@pghero.intricately.com}
-role :web, %w{root@pghero.intricately.com}
+role :app, %w{pghero}
+role :web, %w{pghero}
 
 
 # Configuration
