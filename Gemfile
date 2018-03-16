@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+git_source(:github) do |repo_name|
+  "https://github.com/#{repo_name}.git"
+end
+
 ruby '2.4.3'
 
 gem 'rails', '~> 5.1.5'
@@ -19,4 +23,5 @@ group :development do
   gem 'capistrano-rails',   require: false
   gem 'capistrano-bundler', require: false
   gem 'capistrano3-puma',   require: false
+  gem 'capistrano-ssh-doctor', require: false, github: 'pboling/capistrano-ssh-doctor', branch: 'fixed'
 end
