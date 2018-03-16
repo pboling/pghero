@@ -1,11 +1,8 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.10.1"
 
-set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
-
 # Change these
-server 'your_server_ip', port: 80, roles: [:web, :app, :db], primary: true
+server '159.65.251.171', port: 80, roles: [:web, :app], primary: true
 
 set :repo_url,        'git@bitbucket.org:cloudrupt/pghero.git'
 set :application,     'pghero'
