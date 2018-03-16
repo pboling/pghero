@@ -5,8 +5,5 @@ default: &default
     replica:
       url: <%= ENV["REPLICA_DATABASE_URL"] %>
 
-development:
-  <<: *default
-
 production:
   <<: *default
