@@ -29,7 +29,7 @@ install_plugin Capistrano::SCM::Git
 require 'capistrano/ssh_doctor'
 require 'capistrano/rails'
 require 'capistrano/bundler'
-require 'capistrano/rvm'
+# require 'capistrano/rvm'
 # require 'capistrano/rbenv'
 # require 'capistrano/chruby'
 require 'capistrano/bundler'
