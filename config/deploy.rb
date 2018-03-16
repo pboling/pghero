@@ -2,7 +2,7 @@
 lock "~> 3.10.1"
 
 # Change these
-server '159.65.251.171', port: 80, roles: [:web, :app], primary: true
+server 'pghero.intricately.com', port: 80, roles: [:web, :app], primary: true
 
 set :repo_url,        'git@bitbucket.org:cloudrupt/pghero.git'
 set :application,     'pghero'
@@ -117,7 +117,7 @@ end
 # set :local_user, -> { `git config user.name`.chomp }
 
 # Default value for keep_releases is 5
-# set :keep_releases, 5
+set :keep_releases, 5
 
 # Uncomment the following to require manually verifying the host key before first deploy.
-# set :ssh_options, verify_host_key: :secure
+set :ssh_options, verify_host_key: :secure
